@@ -1,0 +1,29 @@
+.schedule {
+  font-size: 1.5em;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.weekly-schedule {
+  padding: 10px;
+  padding-top: 50px;
+  margin: auto;
+  width: 78%;
+  text-align: left;
+}
+
+.header {
+  font-weight: bold;
+}
+
+table {
+  table-layout: fixed;
+  width: 1120px;
+  border-spacing: 5px;
+  padding: 5px;
+}
+
+td {
+  width: 280px;
+}

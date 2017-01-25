@@ -1,0 +1,2 @@
+class StaffPerson < Person
+end

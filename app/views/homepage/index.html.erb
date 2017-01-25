@@ -1,0 +1,27 @@
+<h4 class="schedule">
+  Schedule for Fri Jan 27, 2017 - Sun Jan 29, 2017
+</h4>
+<div class="weekly-schedule">
+  <% @schedule.each do |day, klass_details| %>
+      <table>
+        <tbody>
+          <tr class="header">
+            <td><%= day.capitalize %></td>
+            <td>Class</td>
+            <td>Instructor</td>
+            <td>Register</td>
+          </tr>
+          <% klass_details.each do |klass| %>
+          <tr>
+            <td class="time"><%= klass[:start_time] %> - <%= klass[:end_time]%></td>
+            <td class="class"><%= klass[:class_name]%></td>
+            <td class="instructor"><%= klass[:instructor]%></td>
+            <td class="register-button">
+              <a href="/login" class="sign-up">Sign Up</a>
+            </td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+  <% end %>
+</div>
